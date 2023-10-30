@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="main-style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <div class="home">
+                        <i class="fa-solid fa-house fa-2xs" style="color: #b3b3b3;"></i>
+                        <a href="#">Home</a>
+                    </div> 
+                </li>
+                <li>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #b3b3b3;"></i>
+                        <a href="#">Search</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="library">
+            <div class="libHeader">
+                <ul>
+                    <li>
+                        <div class="librarySlide">
+                            <i class="fa-solid fa-book fa-2xs" style="color: #b3b3b3;"></i>
+                            <a href="#">Your Library</a>
+                        </div>
+                    </li>
+                </ul>
+            
+            
+                <div class="libraryButtons">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-plus fa-2xs" style="color: #b3b3b3;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right fa-2xs" style="color: #b3b3b3;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="libraryFilters">
+                <button>Lists</button>
+                <button>Artists</button>
+                <button>Albums</button>
+                <button>Podcasts and shows</button>
+            </div>
+
+            <div class="sLine">
+                <div class="searchBar">
+                    <button onclick="hideSearchBar()" onclick="recentsdd()">
+                        <i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #b3b3b3;"></i>
+                    </button>
+                    <input id="inputBar" type="textbox"></input>
+                </div>
+
+                <div class="recentsDropdown">
+                    <button id="recents">
+                        Recents
+                        <i class="fa-solid fa-bars fa-2xs" style="color: #b3b3b3;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="libAlbums">
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">Liked Songs</div>
+                        <p>Playlist • 1,509 songs</p>
+                    </div>
+                </a>
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">On Repeat</div>
+                        <p>Playlist • Spotify</p>
+                    </div>
+                </a>
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">UTOPIA</div>
+                        <p>Album • Travis Scott</p>
+                    </div>
+                </a>
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">My Beautiful Dark Twisted Fantasy</div>
+                        <p>Album • Kanye West</p>
+                    </div>
+                </a>
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">Graduation</div>
+                        <p>Album • Kanye West</p>
+                    </div>
+                </a>
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">DC4</div>
+                        <p>Album • Meek Mill</p>
+                    </div>
+                </a>
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">After Hours (Deluxe)</div>
+                        <p>Album • The Weeknd</p>
+                    </div>
+                </a>
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">Realer 2</div>
+                        <p>Album • YoungBoy Never Broke Again</p>
+                    </div>
+                </a>
+
+                <a href="#" class="clickableDiv">
+                    <div class="albumLine">
+                        <img src="LikedSongs.JPG" width="48" height="48">
+                        <div class="albumTitle">Pink Tape</div>
+                        <p>Album • Lil Uzi Vert</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="main">
+
+    </div>
+
+
+    <div id="footer">
+
+        <div class="song_ctrl_btns">
+
+            <div class="play_btn">
+                <i class="fa-solid fa-play fa-2xs" style="color: #000000;"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

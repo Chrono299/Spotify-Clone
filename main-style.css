@@ -1,0 +1,266 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+}
+
+.sidebar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 450px;
+}
+
+.navigation{
+    background-color: #121212;
+    border-radius: 9px;
+    width: 420px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    margin: 15px 0;
+    padding: 0;
+    position: relative;
+    right: 23px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #b3b3b3;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.navigation i {
+    font-size: 19px;
+    vertical-align: middle;
+
+}
+
+.navigation a:hover,
+.navigation a:active,
+.navigation a:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 9px;
+    width: 420px;
+    padding: 5px;
+    margin: 10px;
+    height: 100%;
+}
+
+.librarySlide {
+    position: relative;
+    right: 23px;
+}
+
+.librarySlide a {
+    text-decoration: none;
+    color: #b3b3b3;
+    padding: 0 10px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.librarySlide i {
+    font-size: 19px;
+    vertical-align: middle;
+}
+
+.librarySlide a:hover,
+.librarySlide a:active,
+.librarySlide a:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.libHeader ul {
+    list-style: none;
+}
+
+.libHeader li {
+    margin: 15px 0;
+}
+
+.libraryButtons {
+    position: absolute;
+    right: 35px;
+    top: 91px;
+    font-size: 29px;
+}
+
+.libraryButtons li {
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.libraryFilters {
+    text-align: center;
+    margin: 20px;
+}
+
+.libraryFilters button {
+    background-color: #222222;
+    border: 0px;
+    border-radius: 15px;
+    outline: none;
+    padding: 9px 16px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.libraryFilters button:hover {
+    background-color: #3a3a3a;
+}
+
+.libraryFilters button:active {
+    background-color: #999494;
+}
+
+.searchBar button {
+    background: none;
+    cursor: pointer;
+    border: 0px;
+}
+
+.searchBar i {
+    font-size: 16px;
+    margin-left: 35px;
+    vertical-align: middle;
+    position: fixed;
+
+}
+
+.searchBar input {
+    border: none;
+    background-color: #2a2a2a;
+    outline: none;
+    position: relative;
+    display: block;
+    left: 70px;
+    bottom: 13px;
+}
+
+.recentsDropdown {
+    position: relative;
+    left: 320px;
+    bottom: 34px;
+    margin-top: 0px;
+}
+
+.recentsDropdown button{
+    position: relative;
+    left: 22px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    color: #b3b3b3;
+  }
+  
+.recentsDropdown i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.sLine {
+    position: relative;
+    right: 23px;
+}
+
+.libAlbums a {
+    text-decoration: none;
+}
+
+.albumLine {
+    position: relative;
+    border-radius: 5px;
+    bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-decoration: none;
+}
+
+.albumLine:hover {
+    background-color: #1a1a1a;
+}
+
+.albumLine:active {
+    background-color: #222222;
+}
+
+.albumTitle {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 15px;
+    margin-left: 71px;
+    top: 8px;
+
+}
+
+.albumLine p {
+    color: #848484;
+    font-size: 13px;
+    position: relative;
+    left: 71px;
+}
+
+.albumLine img {
+    position: absolute;
+    left: 15px;
+    margin: 5px 20px 5px 0px;
+    border-radius: 5px;
+}
+
+
+
+
+#footer {
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 88px;
+}
+
+.song_ctrl_btns {
+    position: relative;
+}
+
+.play_btn {
+    font-size: 30px;
+    background-color: white;
+    position: relative;
+    margin-right: 95%;
+    left: 945px;
+
+}
+
+
+
+
+#main {
+    background-image: linear-gradient(to bottom, #521740, #421a3c, #331a35, #26192c, #1c1722, #18161d, #151418, #121212, #121212, #121212, #121212, #121212);    position: fixed;
+    right: 0;
+    width: 1460px;
+    height: 880px;
+    margin-right: 10px;
+    margin-top: 2px;
+    border-radius: 9px;
+}
